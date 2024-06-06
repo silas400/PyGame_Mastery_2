@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/python/python.min.js"></script>
+</head>
+<body>
+<main>
+
+  <div id="progressBarContainer">
+    <div id="progressBar"></div>
+  </div>
+
+  <div class="container">
+
+    <div id="1" class="lessonChunk">
+
+      <div class="lesson">
+        <p>Step 1 of the gravity problem!</p>
+
+      <div class="codeExample">
+        <code><p>gravity += some_value</p></code>
+        <code><p>player.y += gravity</p></code>  
+      </div>
+   
+        <p>This applies a constant force pushing the user downward.</p>
+      </div>
+
+      <div class="answerContainer">
+        <button onclick="nextButtonClicked()" class="next">Next</button>
+      </div>
+
+    </div>
+
+    <div id="2" class="lessonChunk">
+
+      <div class="lesson">
+        <p>Step 2: Stop the playing from falling through the ground</p>
+        <div class="codeExample">
+          <p><code>if player.bottom > y_value:</code></p>
+          <p><span class="indent"></span><code>player.bottom = y_value</code></p>
+        </div>
+
+        <p>This pretty much validates a floor</p>
+      
+      </div>
+
+      <div class="answerContainer">
+        <button onclick="nextButtonClicked()" class="next">Next</button>
+      </div>
+
+    </div>
+
+    <div id="3" class="lessonChunk">
+
+      <div class="lesson">
+        <p>Step 3: Jump!</p>
+        <div class="codeExample">
+          <p><code>event.key = pygame.K_SPACE:</code></p>
+          <p><span class="indent"></span><code>player_gravity = -20</code></p>
+        </div>
+        <p>When you make the player go up like this while their is a constant force pushing down on them at the same time, it simulates a jump!</p>
+      
+      </div>
+
+      <div class="answerContainer">
+        <button onclick="nextButtonClicked()" class="next">Next</button>
+      </div>
+
+    </div>
+
+    <div id="4" class="lessonChunk">
+
+      <div class="lesson">
+        <h2><span class="red">Challenge!</span></h2>
+        <p>Only allow the player to jump when they are on the ground!</p>
+      
+      </div>
+
+      <div class="answerContainer">
+        <button onclick="nextButtonClicked()" class="next">Next</button>
+      </div>
+
+    </div>
+
+    <div id="5" class="lessonChunk">
+
+      <div class="lesson">
+        <div class="codeExample">
+          <p><code>screen.fill(color)</code></p>
+        </div>
+        <p>We can use this to fill up the whole screen with 1 color. This will be used for the next challenge.</p>
+        
+      
+      </div>
+
+      <div class="answerContainer">
+        <button onclick="nextButtonClicked()" class="next">Next</button>
+      </div>
+
+    </div>
+
+    <div id="6" class="lessonChunk">
+
+      <div class="lesson">
+
+        <span class="red"><h2>CHALLENGE!</h2></span>
+        <p>Create a game over screen that appears after a certain condition is met. This screen will be filled with 1 solid color and will have a huge text layered on top of it that says "Game Over".</p>
+        <p>The player should be able to click the screen or press a button to restart the game back to normal.</p>
+        
+      
+      </div>
+
+      <div class="answerContainer">
+        <button onclick="nextButtonClicked()" class="next">Next</button>
+      </div>
+
+    </div>
+
+    <div id="8" class="lessonChunk">
+
+      <div class="lesson">
+
+        <span class="red"><h2>CHALLENGE!</h2></span>
+        <p>Lets use all the knowledge we have gained so far to create a simple game! Nothing complicated for now! :D. Just anything that can be considered a game.</p>
+        
+      
+      </div>
+
+      <div class="answerContainer">
+        <button onclick="nextButtonClicked()" class="next">Next</button>
+      </div>
+
+    </div>
+
+   
+
+    </div>
+  
+
+  </div>
+
+
+
+
+
+<button style="display: none;" class="explain-button">Explain Better</button>
+
+
+
+<button style="display: none;" class="rightArrow">></button>
+<button style="display: none;" class="leftArrow"><</button>
+
+<h2></h2>
+
+<div style="display: none;" class="contentExplained">
+
+</div>
+
+<audio id="myAudio" src="Silas.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</main>
+</body>
+</html>
+  
